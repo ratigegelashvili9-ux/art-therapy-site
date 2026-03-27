@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>კონსულტაცია არტ თერაპევტთან</title>
+<style>
+body { margin:0; font-family:'Segoe UI',sans-serif; background:linear-gradient(135deg,#667eea,#764ba2); color:#333; }
+h1 { text-align:center; color:white; margin:30px 0; font-size:34px; }
+.container { max-width:1100px; margin:auto; padding:20px; }
+.flex { display:flex; gap:30px; align-items:flex-start; flex-wrap:wrap; }
+.image { flex:1; position:relative; }
+.image img { width:100%; max-height:420px; object-fit:cover; border-radius:20px; box-shadow:0 15px 35px rgba(0,0,0,0.25); transition:transform 0.3s ease,box-shadow 0.3s ease; }
+.image img:hover { transform:scale(1.03); box-shadow:0 20px 45px rgba(0,0,0,0.35); }
+.bio { margin-top:15px; background:#fff; padding:15px; border-radius:12px; text-align:center; box-shadow:0 5px 20px rgba(0,0,0,0.1); }
+.bio h3 { margin:10px 0 5px; font-size:22px; color:#333; }
+.bio ul { list-style-type:disc; padding-left:20px; color:#555; text-align:left; }
+.bio p { margin-top:10px; font-style:italic; color:#555; }
+.text { flex:1; background:white; padding:25px; border-radius:16px; box-shadow:0 5px 25px rgba(0,0,0,0.1); }
+.section { background:white; padding:25px; border-radius:16px; margin-top:30px; box-shadow:0 5px 20px rgba(0,0,0,0.1); }
+input,textarea,select { width:100%; padding:12px; margin-top:5px; border-radius:8px; border:1px solid #ccc; }
+button { margin-top:20px; background:linear-gradient(45deg,#6a11cb,#2575fc); color:white; border:none; padding:12px; width:100%; border-radius:8px; cursor:pointer; font-size:16px; transition:background 0.3s ease; }
+button:hover { background:linear-gradient(45deg,#2575fc,#6a11cb); }
+.thanks { color:green; font-weight:bold; text-align:center; margin-top:15px; display:none; animation:fadeIn 0.8s ease forwards; }
+@keyframes fadeIn {0% {opacity:0;} 100% {opacity:1;}}
+.badges { display:flex; justify-content:space-around; margin-top:15px; flex-wrap:wrap; gap:10px; }
+.badge { background:#f5f5ff; padding:10px 15px; border-radius:10px; }
+.review { background:#fafafa; padding:15px; border-radius:10px; margin-top:10px; }
+.social a { display:block; text-align:center; background:#1877f2; color:white; padding:12px; border-radius:8px; text-decoration:none; margin-top:10px; }
+@media(max-width:768px){.flex{flex-direction:column;}}
+</style>
+</head>
+<body>
+
+<h1>კონსულტაცია არტ თერაპევტთან</h1>
+
+<div class="container">
+<div class="flex">
+
+<div class="image">
+  <!-- ფოტო რომელიც აუცილებლად ჩანს -->
+  <img src="https://scontent.ftbs5-2.fna.fbcdn.net/v/t39.30808-6/658200951_3542370322580699_8431509321940666685_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=103&ccb=1-7&_nc_sid=13d280&_nc_ohc=CFKONzBtwNIQ7kNvwHqWIwt&_nc_oc=AdpJugxY6ro73LcBayS7rfOTQmWBbFFcy2UGQGgJV4CY53riGk0Soq6f1yLtfxFoTHM&_nc_zt=23&_nc_ht=scontent.ftbs5-2.fna&_nc_gid=kr2S77YO2NwqdLreQ3AzVQ&_nc_ss=7a32e&oh=00_Afyx7ZDEvjD7nyuCTZNXLGI1sXSWLnRTPUmb-otKGXi9sA&oe=69CCBBA2" alt="არტ თერაპევტი">
+  <div class="bio">
+    <h3>ფსიქოლოგი - თამარ გიორგაძე</h3>
+    <ul>
+      <li>არტ თერაპევტი</li>
+      <li>ქცევით თერაპევტი</li>
+      <li>ტუტორი</li>
+      <li>ინკლუზიური განათლების სპეციალისტი</li>
+    </ul>
+  </div>
+</div>
+
+<div class="text">
+<h2>"გარდასახვა არტ თერაპიული ექსპერიმენტებით"</h2>
+<p><strong>რა არის არტ თერაპია?</strong></p>
+<p>ფერების სამყარო, რომელიც სიტყვების ნაცვლად საუბრობს. გეპატიჟებით ექსპერიმენტში, რომელიც გადმოგვცემს დიალოგს - სიჩუმეს და ფურცელზე გადმოტანილ ხმებს შორის.</p>
+<p>ეს არის გზა ტრანსფორმაციისკენ! არტ თერაპია გვეხმარება ვიზუალურად გადმოვცეთ ის, რაც ვერ ვთქვით სიტყვებით. აქ არ არსებობს "სწორი" და "არასწორი" ნამუშევარი, პერსონალური და თავისუფალი ფორმებით წარმოდგენილი შემოქმედებითი პროცესია.</p>
+</div>
+
+</div>
+
+<div class="section">
+<h2>თქვენი შეკითხვა</h2>
+<div class="badges">
+<div class="badge">⏱ პასუხი 24 საათში</div>
+<div class="badge">🔒 კონფიდენციალურობა დაცულია</div>
+</div>
+<form id="contactForm" action="https://formspree.io/f/xvzvzpdv" method="POST">
+<input type="text" name="name" placeholder="სახელი" required>
+<input type="email" name="email" placeholder="ელ.ფოსტა" required>
+<select name="topic" required>
+<option value="">აირჩიეთ თემა</option>
+<option>სტრესი</option>
+<option>ემოციები</option>
+<option>ურთიერთობები</option>
+<option>ბავშვის ქცევა</option>
+<option>ემოციური პრობლემები</option>
+<option>არ ვიცი</option>
+<option>სხვა</option>
+</select>
+<textarea name="message" rows="5" placeholder="შეკითხვა" required></textarea>
+<button type="submit">გაგზავნა</button>
+<p class="thanks" id="thanksMessage">მადლობა! შეტყობინება გაგზავნილია.</p>
+</form>
+</div>
+
+<div class="section">
+<h2>შეფასებები</h2>
+<div class="review">⭐️⭐️⭐️⭐️⭐️ ძალიან კარგი</div>
+<div class="review">⭐️⭐️⭐️⭐️ დამეხმარა</div>
+</div>
+
+<div class="section social">
+<h2>Facebook</h2>
+<a href="https://www.facebook.com/share/18X2BSf479/?mibextid=wwXIfr" target="_blank">პროფილზე გადასვლა</a>
+</div>
+</div>
+
+<script>
+const form = document.getElementById('contactForm');
+const thanks = document.getElementById('thanksMessage');
+form.addEventListener('submit', function(e){
+  e.preventDefault();
+  fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}})
+  .then(res=>{if(res.ok){thanks.style.display='block';form.reset();}else{alert("შეცდომა! სცადეთ თავიდან.");}})
+  .catch(()=>alert("შეტყობინების გაგზავნა ვერ მოხერხდა."));
+});
+</script>
+
+</body>
+</html>
+
